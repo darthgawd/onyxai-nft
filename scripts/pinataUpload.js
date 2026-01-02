@@ -25,6 +25,13 @@ const METADATA_CACHE_PATH = path.join(OUT_DIR, "metadataUploadCache.json");
 // maps id -> tokenURI
 let metadataCache = {};
 
+function ipfsToHttps(uri) {
+  if (!uri) return uri;
+  if (uri.startsWith("ipfs://")) {
+    return uri.replace("ipfs://", "https://gateway.pinata.cloud/ipfs/");
+  }
+  return uri;
+}
 
 
 function idFromFilename(filename) {
@@ -134,13 +141,13 @@ if (!imageURI) {
     const metadata = {
       name: `OnyxAI #${id}`, // keep your ID visible; you can change later
       description:
-        "AI-generated NFT collection minted on Sepolia. Generated and uploaded via JavaScript automation.",
-      image: imageURI,
+        "AI-generated NFT collection minted on Solana. Generated and uploaded via JavaScript automation.",
+      image: ipfsToHttps(imageURI),
       attributes: [
         ...(draft.attributes || []),
         ...(draft.prompt ? [{ trait_type: "Prompt", value: draft.prompt }] : []),
         { trait_type: "Generation ID", value: String(draft.tokenId || id) },
-        { trait_type: "Network", value: "Sepolia Testnet" },
+        { trait_type: "Network", value: "Solana Devnet" },
       ],
     };
 

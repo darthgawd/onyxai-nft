@@ -4,11 +4,10 @@
 # Dependencies
 node_modules/
 
-# Output artifacts (keep folders, ignore generated results/caches)
-output/imageUploadCache.json
-output/metadataUploadCache.json
-output/uploadResults.json
-output/tokenUriMap.json
+# Output
+output/
+
+
 
 # Optional: ignore all generated images/drafts if you don't want them in Git
 # output/images/
