@@ -1,0 +1,22 @@
+{
+  "tokenId": 1767372009415,
+  "prompt": "afrofuturist astronaut, minimalist graphic style, mysterious, teal and gold, centered composition, no text, no watermark",
+  "attributes": [
+    {
+      "trait_type": "Subject",
+      "value": "afrofuturist astronaut"
+    },
+    {
+      "trait_type": "Style",
+      "value": "minimalist graphic style"
+    },
+    {
+      "trait_type": "Mood",
+      "value": "mysterious"
+    },
+    {
+      "trait_type": "Palette",
+      "value": "teal and gold"
+    }
+  ]
+}

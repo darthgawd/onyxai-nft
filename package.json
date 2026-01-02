@@ -1,0 +1,19 @@
+{
+  "name": "onyxai-nft",
+  "version": "1.0.0",
+  "description": "AI-generated generative NFT collection",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "gen:layers": "node scripts/genLayers.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "dotenv": "^16.6.1",
+    "form-data": "^4.0.5",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.3.3",
+    "path": "^0.12.7",
+    "sharp": "^0.33.0"
+  }
+}
